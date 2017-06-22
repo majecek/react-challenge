@@ -4816,6 +4816,10 @@ react-error-overlay@^1.0.7:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
+react-matrix@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-matrix/-/react-matrix-0.0.6.tgz#bdd902bf8e59c52bb5a6ac9bbb7d3da183ea7616"
+
 react-scripts@1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.0.7.tgz#fe1436dda03bb45465c76d097cfea4f32eb7cbbb"

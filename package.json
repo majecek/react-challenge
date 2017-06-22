@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.5.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
     "react-scripts": "1.0.7"
   },
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-matrix": "^0.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
