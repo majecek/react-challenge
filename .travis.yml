@@ -6,6 +6,13 @@ dist: trusty
 sudo: false
 group: edge
 
+addons:
+  sonarqube:
+    organization: chowanioksource
+    branches:
+    - master
+    token:
+      secure: KQwf1D8Wv8VFz0njCYRATvu0+kpTEpuGCvbW72LADLTEF9WxGGq87PbFOppYU59aWDZDcLwl8mziPdzl/3PcK+c4/mkGH0BIdr50yjEW3Itl0QV9GiuUiMC/EQgHSZI7opEO373pp0JROQD36wnt367WTE2AWXJkVh9Trb0uFjetT+NRKbP+gHrslKCqieAhrmczGDs67NCy//kq/eCgD23q2SYmLRWsiXzi7IJqZ2cspiLm8rAiNRVlJHzPY1w39cv0a5trjgv9GJ4oU9m2I6A7Ju9gl65+/eSf1FXgPj8HT75BDA3NWScQOBqBobtHgQCDi/Ej/5KXmy35uAodvkFIpIJTEw1xIrQElKBntx+xO7vHGq/BdUaVf9yhDGobczc7M4vhilRc9vSNHP0q0CQYxi3Vnn1Y/58tLkM4TNZCckcwQyfNNG7eI/DCY5GkYYmVgnqzKPlhlkXA/mCii0nbS44WL8N2EjTm6FB5A2/l3SiApXWruyb22M1kqa0UygjDHganXAimeYEpRpTDZZNHRoeZPfsVcUv9XJwUMczHIAstuN597Nc/4Q2N0BlkLozolRwVs7hM3cf9kdvr7HNybfcATNzWBJC1JeOoKY9VrnoRmTUAxQEXhgsiEBZqTtUmXpM23nZLb0OgaEqsTeuFYc8Vx3e1Std7PscyYWM="
 
 
 cache:

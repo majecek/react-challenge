@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component tests 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "padding": 10,
+      }
+    }
+  >
+    <div>
+      <form
+        className="input-group"
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          placeholder="insert your array separated by comma"
+          value=""
+        />
+        <span
+          className="input-group-btn"
+        >
+          <button
+            className="btn btn-secondary"
+            type="submit"
+          >
+            Submit
+          </button>
+        </span>
+      </form>
+      <div
+        className="form-group has-danger"
+      >
+        <div
+          className="form-control-feedback"
+        >
+          
+        </div>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-block text-nowrap"
+      >
+        Total water in sinkbase: 
+        0
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "padding": 20,
+        }
+      }
+    >
+      <svg
+        className="Matrix"
+        height={50}
+        width={0}
+      >
+        <g>
+          <g
+            className="Row"
+          />
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+`;

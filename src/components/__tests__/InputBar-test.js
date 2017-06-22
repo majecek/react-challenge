@@ -16,4 +16,5 @@ it('InputBar checks state properties', async () => {
   expect(wrapper.state('inputTerm')).toEqual('')
   await wrapper.find('input').simulate('change')
   // console.log(wrapper.state())
+  expect(wrapper.state('error')).toEqual('')
 })
