@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "enzyme": "^2.9.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-import": "^2.5.0",
@@ -10,7 +11,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-standard": "^3.0.1",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^2.3.5"
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",

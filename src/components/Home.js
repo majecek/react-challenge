@@ -18,7 +18,7 @@ class Home extends Component {
     vectorArray: [],
     sinkBaseTotalWater: 0,
     sinkBaseArray: [],
-    squareSize: 0,
+    // squareSize: 0,
     matrix: [[]]
 
   }
@@ -81,9 +81,14 @@ class Home extends Component {
   render () {
     return (
       <div style={style}>
+
         <InputBar onInput={this.onInputArray}/>
 
-        Total water in sinkbase: {this.state.sinkBaseTotalWater}
+        <div className="card">
+          <div className="card-block text-nowrap">
+            Total water in sinkbase: {this.state.sinkBaseTotalWater}
+          </div>
+        </div>
 
         <div>
           <ReactMatrix squareSize={50} matrix={this.state.matrix}

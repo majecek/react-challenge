@@ -25,7 +25,7 @@ class InputBar extends Component {
       <div>
         <form onSubmit={this.onFormSubmit} className="input-group">
           <input
-            placeholder="insert your array separated by commas"
+            placeholder="insert your array separated by comma"
             className="form-control"
             value={this.state.inputTerm}
             onChange={this.onInputChange}/>
