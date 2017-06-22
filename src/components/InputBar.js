@@ -8,7 +8,10 @@ class InputBar extends Component {
   }
 
   onInputChange = (event) => {
-    console.log(event.target.value)
+    if(! /^([0-9\,]*)$/.test(event.target.value)) {
+      alert('only numeric values separated by comma')
+      return
+    }
     this.setState({inputTerm: event.target.value})
   }
 
@@ -26,7 +29,9 @@ class InputBar extends Component {
             className="form-control"
             value={this.state.inputTerm}
             onChange={this.onInputChange}/>
-          <button type="submit">Submit</button>
+          <span className="input-group-btn">
+            <button type="submit" className="btn btn-secondary">Submit</button>
+          </span>
         </form>
       </div>
     )
