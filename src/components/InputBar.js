@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import _ from 'lodash'
 
 class InputBar extends Component {
 
@@ -13,7 +14,7 @@ class InputBar extends Component {
 
   onFormSubmit = (event) => {
     event.preventDefault()
-    this.props.onInput(this.state.inputTerm.split(','))
+    this.props.onInput(_.map(this.state.inputTerm.split(','), _.parseInt))
   }
 
   render () {
