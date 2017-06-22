@@ -23,5 +23,14 @@ exports[`InputBar component check against snapshot 1`] = `
       </button>
     </span>
   </form>
+  <div
+    className="form-group has-danger"
+  >
+    <div
+      className="form-control-feedback"
+    >
+      
+    </div>
+  </div>
 </div>
 `;
