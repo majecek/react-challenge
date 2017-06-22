@@ -1,6 +1,14 @@
 ###### One solution is to traverse input array from left and right and mark peaks
    
    * water = Sum(Min(LeftHeight,RightHeig) - height)
+   
+   Project is hosted on google, code is maintained on github, CI is done on travis and code check is done by sonar. 
+   Here are links: 
+   
+   * [project hosted](https://pleo-reactchallenge.firebaseapp.com/)
+   * [Github](https://github.com/majecek/react-challenge)
+   * [![Build Status](https://travis-ci.org/majecek/react-challenge.svg?branch=master)](https://travis-ci.org/majecek/react-challenge) - Travis
+   * [Sonar](https://sonarcloud.io/dashboard?id=chowanioksource%3AreactChallengePleoIO%3Amaster)
 
  
 
