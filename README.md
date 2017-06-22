@@ -1,3 +1,11 @@
+###### One solution is to traverse input array from left and right and mark peaks
+   
+   * water = Sum(Min(LeftHeight,RightHeig) - height)
+
+ 
+
+#
+
 # Pleo React Challenge
 
 We want you to create a user interface using React that solves the following problem.
