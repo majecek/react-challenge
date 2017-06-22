@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputBar component check against snapshot 1`] = `
+<div>
+  <form
+    className="input-group"
+    onSubmit={[Function]}
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      placeholder="insert your array separated by comma"
+      value=""
+    />
+    <span
+      className="input-group-btn"
+    >
+      <button
+        className="btn btn-secondary"
+        type="submit"
+      >
+        Submit
+      </button>
+    </span>
+  </form>
+</div>
+`;
