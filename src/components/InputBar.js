@@ -4,15 +4,19 @@ import _ from 'lodash'
 class InputBar extends Component {
 
   state = {
-    inputTerm: ''
+    inputTerm: '',
+    error: ''
   }
 
   onInputChange = (event) => {
     if(! /^([0-9\,]*)$/.test(event.target.value)) {
-      alert('only numeric values separated by comma')
+      this.setState({error:'use only numbers and commas'})
       return
     }
-    this.setState({inputTerm: event.target.value})
+    this.setState({
+      inputTerm: event.target.value,
+      error: ''
+    })
   }
 
   onFormSubmit = (event) => {
@@ -33,6 +37,9 @@ class InputBar extends Component {
             <button type="submit" className="btn btn-secondary">Submit</button>
           </span>
         </form>
+        <div className="form-group has-danger">
+            <div className="form-control-feedback">{this.state.error}</div>
+        </div>
       </div>
     )
   }

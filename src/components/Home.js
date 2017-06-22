@@ -4,12 +4,19 @@ import ReactMatrix from 'react-matrix'
 import _ from 'lodash'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const style = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: 30
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 10
+  },
+
+  matrix: {
+    padding: 20
+  }
+
 }
 
 class Home extends Component {
@@ -18,7 +25,6 @@ class Home extends Component {
     vectorArray: [],
     sinkBaseTotalWater: 0,
     sinkBaseArray: [],
-    // squareSize: 0,
     matrix: [[]]
 
   }
@@ -34,24 +40,24 @@ class Home extends Component {
   sinkBaseCalculation = () => {
     const vectorInput = this.state.vectorArray
 
-    let leftHighestColumn = []
+    const leftHighestColumn = []
     for (let i = 0; i < vectorInput.length; i++) {
       leftHighestColumn[i] = Math.max(vectorInput[i], i !== 0 ? leftHighestColumn[i - 1] : 0)
     }
 
-    let rightHighestColumn = []
+    const rightHighestColumn = []
     for (let i = vectorInput.length - 1; i >= 0; i--) {
       rightHighestColumn[i] = Math.max(vectorInput[i], i < vectorInput.length - 1 ? rightHighestColumn[i + 1] : 0)
     }
 
-    let sinkBaseArray = []
+    const sinkBaseArray = []
     for (let i = 0; i < vectorInput.length; i++) {
       sinkBaseArray[i] = Math.min(leftHighestColumn[i], rightHighestColumn[i]) - vectorInput[i]
     }
 
     this.setState({
       sinkBaseTotalWater: sinkBaseArray.reduce((total, amount) => total + amount, 0),
-      sinkBaseArray: sinkBaseArray
+      sinkBaseArray
     })
 
     this.matrixGeneration()
@@ -67,7 +73,7 @@ class Home extends Component {
       zerosArray[index] = YAxis - (waterNumber + this.state.vectorArray[index])
     })
 
-    const matrix = Array.from({length: _.max(this.state.vectorArray)}, () => new Array(this.state.vectorArray.length).fill(0))
+    const matrix = Array.from({length: _.max(this.state.vectorArray)}, () => [this.state.vectorArray.length].fill(0))
 
     for (let i = 0; i < XAxis; i++) {
       for (let j = 0; j < YAxis; j++) {
@@ -75,12 +81,12 @@ class Home extends Component {
       }
     }
 
-    this.setState({matrix: matrix})
+    this.setState({matrix})
   }
 
   render () {
     return (
-      <div style={style}>
+      <div style={styles.container}>
 
         <InputBar onInput={this.onInputArray}/>
 
@@ -90,7 +96,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <div>
+        <div style={styles.matrix}>
           <ReactMatrix squareSize={50} matrix={this.state.matrix}
                        cellStates={{'0': 'available', '1': 'barrier', '2': 'path'}}/>
         </div>
