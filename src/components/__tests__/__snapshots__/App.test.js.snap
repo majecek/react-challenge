@@ -22,6 +22,17 @@ exports[`App component tests 1`] = `
       }
     }
   >
+    <div
+      className="alert alert-info"
+      role="alert"
+    >
+      Count water in sink base - project assignment can be found on 
+      <a
+        href="https://github.com/majecek/react-challenge"
+      >
+        Github
+      </a>
+    </div>
     <div>
       <form
         className="input-group"
@@ -30,7 +41,7 @@ exports[`App component tests 1`] = `
         <input
           className="form-control"
           onChange={[Function]}
-          placeholder="insert your array separated by comma"
+          placeholder="enter 4,2,4"
           value=""
         />
         <span

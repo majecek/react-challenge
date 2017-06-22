@@ -87,6 +87,9 @@ class Home extends Component {
   render () {
     return (
       <div style={styles.container}>
+        <div className="alert alert-info" role="alert">
+          Count water in sink base - project assignment can be found on <a href="https://github.com/majecek/react-challenge">Github</a>
+        </div>
 
         <InputBar onInput={this.onInputArray}/>
 

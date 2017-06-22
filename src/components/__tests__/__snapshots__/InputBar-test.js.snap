@@ -9,7 +9,7 @@ exports[`InputBar component check against snapshot 1`] = `
     <input
       className="form-control"
       onChange={[Function]}
-      placeholder="insert your array separated by comma"
+      placeholder="enter 4,2,4"
       value=""
     />
     <span
