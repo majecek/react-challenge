@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "7"
+
+dist: trusty
+sudo: false
+group: edge
+
+
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+    - node_modules
