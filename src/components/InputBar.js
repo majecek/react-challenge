@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
+import PropTypes from 'prop-types'
 
 class InputBar extends Component {
 
@@ -43,6 +44,10 @@ class InputBar extends Component {
       </div>
     )
   }
+}
+
+InputBar.propTypes = {
+  onInput: PropTypes.func.isRequired
 }
 
 export default InputBar
